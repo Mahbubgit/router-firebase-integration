@@ -19,6 +19,11 @@ const Header = () => {
                 <Link to={"/register"}>Register</Link>
 
                 {
+                    user && <>
+                    <Link to={"/vip"}>VIP</Link>
+                    </>
+                }
+                {
                     user?.uid ?
                         <>
                             <span>{user.displayName && user.displayName}</span>
